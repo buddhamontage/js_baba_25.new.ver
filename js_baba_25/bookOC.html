@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 文字化け防止 -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- SP対応表示 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book of change</title>
+  <!-- favicon touchicon設定 -->
+  <!-- ogp関連設定 -->
+  <!-- twitter card設定 -->
+  <!-- format-detection Iphone数字羅列禁止 -->
+ 
+  <meta name="description" content="Try Book of changes Site">
+  <meta property="og:title" content="Try Book of changes Site">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="images/common/ogimage.png">
+  <meta property="og:site_name" content="Try Book of changes Site">
+  <meta property="og:description" content="Try Book of changes Site">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" href="images/common/touch-icon.png">
+  <link rel="shortcut icon" href="images/common/favicon.ico">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+      <h1>
+        Book of Changes
+      </h1>
+      
+      <audio autoplay id="audio">
+        <source src="music/1000sounds.mp3" loop>
+      </audio>
+      <audio autoplay id="audio2">
+        <source src="music/nami (online-audio-converter.com).mp3" loop>
+      </audio>
+
+
+    </header>
+ 
+    <main>
+
+      <section>
+        <!-- タブ -->
+          <div class="tabs">
+            <input id="all" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="all">What's 易?</label>
+            <input id="programming" type="radio" name="tab_item">
+            <label class="tab_item" for="programming">How to use</label>
+            <input id="design" type="radio" name="tab_item">
+            <label class="tab_item" for="design">Play</label>
+            
+          <!-- 　タブ1 -->
+            <div class="tab_content" id="all_content">
+              <div class="tab_content_description">
+                
+                <h2 class="c-txtsp">『易』とは2000年前に書かれた変化に関する知恵</h2>
+                
+                <P>　ここではデータサイエンティスト矢野和男氏の考えをもとに、『易』を現代的な視点から利用できます。<br>
+                  『易』は予測不能な未来に体系的に処することを書き記しています。<br>
+                    人々が遭遇する変化を、64個の体系的に構成されたパターンに分類し、その対応方法を記述しています。
+                    かつては勝海舟などの知識人に愛読され、ライプニッツにより論文が書かれた書物です。<br>
+                    それでは皆さんも易を簡単に試して、「変化への対応力」を高めましょう。
+                </P>
+
+                <h3>変化対応の原則</h3>
+                <p>第一の原則　変化にはその特徴にあった向き合い方がある。<br>
+                第二の原則　的確に向き合えば、変化は機会になる。<br>
+                第三の原則　変化を機械に変える行為が「幸せ」である。</p>
+
+              </div>
+            </div>
+
+            <!-- 　タブ2 -->
+            <div class="tab_content" id="programming_content">
+              <div class="tab_content_description">
+
+                <h2 class="c-txtsp">変化への対応力を高める訓練</h2>
+                <p> (1) １日のはじめにPLAY画面の「STOP」をクリックします。<br>
+                    (2) 16パターンの変化に対する視点が表示されます。<br>
+                    (3) 表示された内容を、その日の仕事や状況にあてはめて解釈します。<br>
+                    (4) その解釈を意識して１日を過ごす。そして翌朝振り返ります。<br>
+                    (5) これを毎朝繰り返します。
+                </p>
+                <p>※ 気に入る表示が出るまで繰り返すと訓練効果が失われます。原則１日１回です。</p>
+
+                <p></p>
+
+              </div>
+            </div>
+
+            <!-- 　タブ3 -->
+            <div class="tab_content" id="design_content">
+              <div class="tab_content_description">
+
+                <div class="button-wrapper rythm-bass">
+                  <button type="button" class="start button_action" id="startButton">Start</button>
+                </div>
+ 
+                <div id="ekibutton" class="button-wrapper rythm-bass">
+              
+                  <button type="button" class="stop button_action" id="stopButton">STOP</button>
+                  <button type="button" class="restart button_action" id="restartButton" style="display: none;">AGAIN</button>
+                </div>
+            
+                <div class="rand_area c-txtsp result_text">
+                    <h2 class="rand_name"></h2>
+                    <!-- <div class="rand_result"> </div> -->
+                    <!-- <div class="rand_result_text"> </div> -->
+                    <h3 class="change_result1"></h3>
+                    <div class="change_result2"></div> 
+                    <!-- 写真差し込み　 <img id="rand_pic" src="image/sicssor.png" alt=""> -->
+                </div>
+            
+              </div>
+            </div>
+
+        </div>
+
+      </section>
+      <footer>
+
+      </footer>
+    </main>
+
+<!-- jQuery読込 既に読み込んでいる場合は不要 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="/path/to/rythm.js"></script>
+<script src="js/index.js"></script>
+
+
+
+
+
+</body>
+</html>
